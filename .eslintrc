@@ -1,0 +1,86 @@
+{
+  "root": true,
+  "parser": "babel-eslint",
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaFeatures": {
+      "jsx": true
+    }
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "airbnb",
+    "airbnb/hooks",
+    "prettier",
+    "prettier/react"
+  ],
+  "plugins": [
+    "react",
+    "jsx-a11y",
+    "prettier"
+  ],
+  "globals": {
+    "window": true,
+    "document": true,
+    "FormData": true,
+    "EventSource": true,
+    "btoa": true
+  },
+  "env": {
+    "browser": true,
+    "jest": true,
+    "es6": true
+  },
+  "rules": {
+    "max-len": ["error", { "code": 100, "ignoreStrings": true, "ignoreUrls": true }],
+    "prettier/prettier": "error",
+    "import/prefer-default-export": 0,
+    "import/no-extraneous-dependencies": 0,
+    "react/jsx-filename-extension": [
+      1,
+      {
+        "extensions": [
+          ".js",
+          ".jsx"
+        ]
+      }
+    ],
+    "react/jsx-props-no-spreading": 0,
+    "react/jsx-no-duplicate-props": [2, { "ignoreCase": false }],
+    "react/state-in-constructor": 0,
+    "react/forbid-prop-types": 0,
+    "react-hooks/exhaustive-deps": 0,
+    "jsx-a11y/click-events-have-key-events": 0,
+    "jsx-a11y/no-static-element-interactions": 0,
+    "jsx-a11y/no-autofocus": 0,
+    "jsx-a11y/anchor-is-valid": [ "error", {
+      "components": [ "Link" ],
+      "specialLink": [ "to" ]
+    }],
+    "jsx-a11y/label-has-associated-control": [ 2, {
+      "assert": "either"
+    }],
+    "no-console": ["error", { "allow": ["warn", "error"] }],
+    "no-shadow": "off",
+    "no-unused-expressions": 0,
+    "arrow-parens": [2, "always"],
+    "arrow-body-style": 0,
+    "array-callback-return": 0,
+    "operator-linebreak": 0,
+    "implicit-arrow-linebreak": 0,
+    "camelcase": ["error", { "allow": ["^UNSAFE_", "_plural"] }],
+    "no-plusplus": ["error", { "allowForLoopAfterthoughts": true }],
+    "max-classes-per-file": ["error", 2],
+    "consistent-return": 0
+  },
+  "settings": {
+    "react": {
+      "createClass": "createReactClass",
+      "pragma": "React",
+      "version": "detect"
+    }
+  }
+}
