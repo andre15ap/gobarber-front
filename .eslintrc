@@ -65,7 +65,7 @@
         "assert": "either"
       }
     ],
-    "no-console": ["error", { "allow": ["warn", "error"] }],
+    // "no-console": ["error", { "allow": ["warn", "error"] }],
     "no-shadow": "off",
     "no-unused-expressions": 0,
     "arrow-parens": [2, "always"],
